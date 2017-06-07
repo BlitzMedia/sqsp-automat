@@ -1,0 +1,67 @@
+{
+  "title": "Squarespace Template Helper",
+  "name": "squarespace-template-helper",
+  "description": "A structured workflow for customizing JavaScript and CSS on Squarespace templates without Developer mode.",
+  "version": "0.3.0",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "babel-core": "^6.13.2",
+    "babel-loader": "^6.2.4",
+    "babel-preset-es2015": "^6.13.2",
+    "babel-preset-stage-0": "^6.5.0",
+    "cssnano": "^3.7.3",
+    "es6-promise": "^3.2.1",
+    "eslint": "^2.10.2",
+    "eslint-loader": "^1.5.0",
+    "exports-loader": "^0.6.3",
+    "expose-loader": "^0.7.1",
+    "fg-loadcss": "^1.2.0",
+    "fg-loadjs": "^1.0.0",
+    "file-loader": "^0.9.0",
+    "imports-loader": "^0.6.5",
+    "jquery": "^3.1.0",
+    "jsdoc": "^3.4.0",
+    "jsdoc-oblivion": "0.0.4",
+    "node-sass": "^3.8.0",
+    "on-build-webpack": "^0.1.0",
+    "parallelshell": "^2.0.0",
+    "postcss-cli": "^2.5.2",
+    "postcss-loader": "^0.9.1",
+    "properjs-hobo": "^0.3.10",
+    "sass-loader": "^4.0.0",
+    "uglify-js": "^2.7.0",
+    "webpack": "^1.13.1",
+    "whatwg-fetch": "^1.0.0"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint ./source/js/",
+    "docs": "jsdoc source/js/ -r -R README.md -P package.json -t node_modules/jsdoc-oblivion/template -c node_modules/jsdoc-oblivion/template/jsdoc.conf.json -d docs",
+    "watch": "./node_modules/.bin/webpack -d --watch --colors",
+    "start": "npm run watch",
+    "postinstall": "cd ./node_modules/properjs-hobo && npm install && npm run build -- 'attr eq not detach append prepend remove parent filter'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/squarefront/squarespace-template-helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/squarefront/squarespace-template-helper/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/squarefront/squarespace-template-helper/blob/master/LICENSE"
+    }
+  ],
+  "keywords": [],
+  "license": "MIT",
+  "contributors": [
+    {
+      "name": "Jason Barone",
+      "email": "jason@jasonbarone.com",
+      "url": "http://jasonbarone.com"
+    }
+  ],
+  "readmeFilename": "README.md"
+}

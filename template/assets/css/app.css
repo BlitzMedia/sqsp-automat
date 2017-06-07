@@ -1,0 +1,530 @@
+/******************************************************************************
+ * Your Site Name
+ * Copyright Your Site Name. All rights reserved.
+*******************************************************************************/
+/******************************************************************************
+ * Config
+*******************************************************************************/
+/******************************************************************************
+ * Variables
+ *
+ * Keep your Sass variables stored here for organization.
+*******************************************************************************/
+/******************************************************************************
+ * Asset Paths
+*******************************************************************************/
+/******************************************************************************
+ * Fonts
+*******************************************************************************/
+/******************************************************************************
+ * Icons
+*******************************************************************************/
+/******************************************************************************
+ * Colors
+*******************************************************************************/
+/******************************************************************************
+ * Grid
+*******************************************************************************/
+/******************************************************************************
+ * Sizes
+ *
+ * Still working on this with regards to Squarespace templates. :)
+*******************************************************************************/
+/******************************************************************************
+ * Typography
+ *
+ * This will get a complete refresh of a new type method I'm working on.
+ * CSS calc px + viewport width units FTW. Coming soon. :)
+*******************************************************************************/
+/******************************************************************************
+ * Breakpoints
+*******************************************************************************/
+/******************************************************************************
+ * Animations
+*******************************************************************************/
+/******************************************************************************
+ * Layering
+*******************************************************************************/
+/******************************************************************************
+ * Mixins
+ *
+ * Still working on useful mixins for Squarespace non-dev templates.
+*******************************************************************************/
+/******************************************************************************
+ * Core
+*******************************************************************************/
+/******************************************************************************
+ * Grid / Layout
+ *
+ * This is for high-level layout utilities.
+*******************************************************************************/
+.grid__item {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  position: relative;
+  width: 100%; }
+  .grid__item.is-active {
+    opacity: 1;
+    transform: translate3d(0, 0, 0); }
+  .grid__item.is-inactive {
+    opacity: 0;
+    transform: translate3d(0, 0, 0); }
+
+/******************************************************************************
+ * Flexbox
+ *
+ * Flexbox is CSS magic.
+ * This system creates simple shortcodes for adding Flexbox.
+*******************************************************************************/
+.-flex {
+  display: -ms-flexbox;
+  display: flex; }
+
+.-flex-col {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.-flex-row {
+  -ms-flex-direction: row;
+      flex-direction: row; }
+
+.-flex-align-start {
+  -ms-flex-align: start;
+      -ms-grid-row-align: flex-start;
+      align-items: flex-start; }
+
+.-flex-align-center {
+  -ms-flex-align: center;
+      -ms-grid-row-align: center;
+      align-items: center; }
+
+.-flex-align-end {
+  -ms-flex-align: end;
+      -ms-grid-row-align: flex-end;
+      align-items: flex-end; }
+
+.-flex-justify-start {
+  -ms-flex-pack: start;
+      justify-content: flex-start; }
+
+.-flex-justify-center {
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.-flex-justify-end {
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+
+/******************************************************************************
+ * Columns
+*******************************************************************************/
+.column--12of12 {
+  width: 100%; }
+
+.width--12 {
+  width: 8.33333%; }
+
+.column--11of12 {
+  width: 91.66667%; }
+
+.width--11 {
+  width: 9.09091%; }
+
+.column--10of12 {
+  width: 83.33333%; }
+
+.width--10 {
+  width: 10%; }
+
+.column--9of12 {
+  width: 75%; }
+
+.width--9 {
+  width: 11.11111%; }
+
+.column--8of12 {
+  width: 66.66667%; }
+
+.width--8 {
+  width: 12.5%; }
+
+.column--7of12 {
+  width: 58.33333%; }
+
+.width--7 {
+  width: 14.28571%; }
+
+.column--6of12 {
+  width: 50%; }
+
+.width--6 {
+  width: 16.66667%; }
+
+.column--5of12 {
+  width: 41.66667%; }
+
+.width--5 {
+  width: 20%; }
+
+.column--4of12 {
+  width: 33.33333%; }
+
+.width--4 {
+  width: 25%; }
+
+.column--3of12 {
+  width: 25%; }
+
+.width--3 {
+  width: 33.33333%; }
+
+.column--2of12 {
+  width: 16.66667%; }
+
+.width--2 {
+  width: 50%; }
+
+.column--1of12 {
+  width: 8.33333%; }
+
+.width--1 {
+  width: 100%; }
+
+.column--1of3 {
+  width: 33.333333333%; }
+
+.column--2of3 {
+  width: 66.66666%; }
+
+.column--1of4 {
+  width: 25%; }
+
+.column--2of4 {
+  width: 50%; }
+
+.column--3of4 {
+  width: 75%; }
+
+.column--1of5 {
+  width: 20%; }
+
+.column--2of5 {
+  width: 40%; }
+
+.column--3of5 {
+  width: 60%; }
+
+.column--4of5 {
+  width: 80%; }
+
+.column--1 {
+  width: 100%; }
+
+/******************************************************************************
+ * Container Layouts
+*******************************************************************************/
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1010px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.wrapper--wide {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1330px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.wrapper--narrow {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 770px;
+  padding-left: 25px;
+  padding-right: 25px; }
+
+.expander {
+  padding-bottom: 50px;
+  padding-top: 50px; }
+
+.expander--wide {
+  padding-bottom: 100px;
+  padding-top: 100px; }
+
+.expander--narrow {
+  padding-bottom: 25px;
+  padding-top: 25px; }
+
+/******************************************************************************
+ * Instrinsic Layouts & Fitters
+*******************************************************************************/
+.media__fitter-outer {
+  position: relative; }
+
+.media__fitter-inner {
+  bottom: 0;
+  left: 0;
+  height: auto;
+  object-fit: cover;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: auto; }
+  .media__fitter-inner > * {
+    width: 100%;
+    height: 100%; }
+
+.media__intrinsic-outer {
+  height: 0;
+  position: relative; }
+
+.media__intrinsic-inner {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  overflow: hidden; }
+
+.-push--left {
+  margin-left: 0;
+  margin-right: auto; }
+
+.-push--right {
+  margin-left: auto;
+  margin-right: 0; }
+
+/******************************************************************************
+ * Aspect Ratios
+*******************************************************************************/
+.aspect--square {
+  padding-bottom: 100%; }
+
+.aspect--standard {
+  padding-bottom: 66.66667%; }
+
+.aspect--standard-vertical {
+  padding-bottom: 150%; }
+
+.aspect--four-three {
+  padding-bottom: 75%; }
+
+.aspect--four-three-vertical {
+  padding-bottom: 133.33333%; }
+
+.aspect--widescreen {
+  padding-bottom: 56.25%; }
+
+.aspect--anamorphic-widescreen {
+  padding-bottom: 42.55319%; }
+
+/******************************************************************************
+ * Icons
+ *
+ * Here you can create a site-wide icon system that's easy to edit.
+*******************************************************************************/
+.icon:before {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  background-repeat: no-repeat;
+  background-size: 3em 23em;
+  content: '';
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+  width: 1em;
+  margin: 0 4px 0 0;
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  -webkit-mask-size: 3em 23em;
+          mask-size: 3em 23em;
+  vertical-align: top; }
+  .cssmask .icon:before {
+    background-color: #000000;
+    -webkit-mask-image: url("/s/icons__ui.svg");
+            mask-image: url("/s/icons__ui.svg"); }
+  .no-cssmask .icon:before {
+    background-image: url("/s/icons__ui.svg"); }
+
+.icon.-style--color:before {
+  background-color: transparent;
+  background-image: url("/s/icons__ui.svg");
+  -webkit-mask-image: none;
+          mask-image: none; }
+
+.icon--large {
+  text-align: center; }
+  .icon--large:before {
+    display: block;
+    font-size: 34px;
+    margin-bottom: .15em; }
+
+/******************************************************************************
+ * Icon Sprite Labels and Positions
+ *
+ * References the position in your icons grid svg file.
+ * Experimental. Will improve this in future release. :)
+*******************************************************************************/
+.icon--name:before {
+  background-position: 0 0;
+  -webkit-mask-position: 0 0;
+          mask-position: 0 0; }
+
+/******************************************************************************
+ * UI & State
+*******************************************************************************/
+/******************************************************************************
+ * Modifiers
+ *
+ * Modifiers are classes that are used with elements (or other classes) to
+ * change or overwrite a CSS value.
+*******************************************************************************/
+/******************************************************************************
+ * Background Images
+*******************************************************************************/
+.-cover {
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.-cover--top {
+  background-position: 50% 0; }
+
+.-cover--right {
+  background-position: 100% 50%; }
+
+.-cover--bottom {
+  background-position: 50% 100%; }
+
+.-cover--left {
+  background-position: 0 50%; }
+
+/******************************************************************************
+ * Lazy Loading Classes
+*******************************************************************************/
+.-is-lazy-loading {
+  opacity: 0; }
+
+.-is-lazy-transition {
+  transition: opacity 600ms cubic-bezier(0.77, 0, 0.175, 1); }
+
+.-is-lazy-loaded {
+  opacity: 1; }
+
+/******************************************************************************
+ * Typography
+*******************************************************************************/
+.-text--center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto; }
+
+.-text--right {
+  text-align: right; }
+
+.-text--left {
+  text-align: left; }
+
+/******************************************************************************
+ * Visibility
+*******************************************************************************/
+.-visibility-40 {
+  opacity: 0.40; }
+
+.-visibility-50 {
+  opacity: 0.50; }
+
+.-visibility-75 {
+  opacity: 0.75; }
+
+/******************************************************************************
+ * Fills
+*******************************************************************************/
+.-bg-black {
+  background-color: #000000; }
+
+/******************************************************************************
+ * Display
+*******************************************************************************/
+.-block {
+  display: block; }
+
+.-none {
+  display: none; }
+
+/******************************************************************************
+ * Modules
+*******************************************************************************/
+/******************************************************************************
+ * Footer
+ *
+ * Custom CSS styles that relate to the footer area.
+ * Note: Not all Squarespace templates have the same classes/IDs.
+*******************************************************************************/
+/******************************************************************************
+ * Header
+ *
+ * Custom CSS styles that relate to the header area.
+ * Note: Not all Squarespace templates have the same classes/IDs.
+*******************************************************************************/
+/******************************************************************************
+ * Videos
+ *
+ * Custom CSS styles that relate to custom videos module.
+ *
+ * This CSS file should probably related to your custom /js/src/modules/ module.
+*******************************************************************************/
+.main__video {
+  opacity: 0;
+  background-color: #353535; }
+  .main__video.is-loaded {
+    opacity: 1; }
+
+/******************************************************************************
+ * Blocks
+*******************************************************************************/
+/******************************************************************************
+ * Squarespace Block - Image
+ *
+ * Custom CSS styles that relate to Squarespace Image Blocks.
+*******************************************************************************/
+/******************************************************************************
+ * Squarespace Block - Summary
+ *
+ * Custom CSS styles that relate to Squarespace Summary Blocks.
+*******************************************************************************/
+/******************************************************************************
+ * Squarespace Block - Video
+ *
+ * Custom CSS styles that relate to Squarespace Video Blocks.
+*******************************************************************************/
+/******************************************************************************
+ * Collections
+*******************************************************************************/
+/******************************************************************************
+ * Collection Type - Blog
+ *
+ * Custom CSS styles that relate to Blog pages.
+*******************************************************************************/
+/******************************************************************************
+ * Collection Type - Events
+ *
+ * Custom CSS styles that relate to Events pages.
+*******************************************************************************/
+/******************************************************************************
+ * Collection Type - Index
+ *
+ * Custom CSS styles that relate to Index pages.
+*******************************************************************************/
+/******************************************************************************
+ * Squarespace
+*******************************************************************************/
+/******************************************************************************
+ * Squarespace Announcement Bar
+*******************************************************************************/
+/******************************************************************************
+ * Squarespace Announcement Bar
+*******************************************************************************/
